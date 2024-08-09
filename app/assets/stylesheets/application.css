@@ -1,0 +1,277 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+ * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.top-box {
+  margin: 33px;
+}
+
+.top-box-title {
+  font-size: 26px;
+  font-weight: 700;
+}
+
+.strong {
+  font-weight: 700;
+}
+
+.top-p {
+  margin: 33px;
+  font-size: 13px;
+  line-height: 18px;
+  height: 18px;
+}
+
+.top-action {
+  font-size: 13px;
+  color: black;
+  margin-left: 33px;
+}
+
+.index-box {
+  margin: 33px;
+}
+
+.index-list-header {
+  font-size: 14px;
+  font-weight: 700;
+  margin-top: 17.42px;
+  margin-bottom: 17.42px;
+}
+
+table {
+  border-collapse: collapse;
+  border: none;
+  width: 745.375px;
+  table-layout: fixed;
+  font-size: 13px;
+}
+
+
+th:nth-child(1), td:nth-child(1) {
+  width: 192px;
+  word-wrap: break-word;
+  white-space: normal;
+}
+th:nth-child(2), td:nth-child(2) {
+  width: 400px;
+  word-wrap: break-word;
+  white-space: normal;
+}
+
+th:nth-child(3), th:nth-child(4), th:nth-child(5),
+td:nth-child(3), td:nth-child(4), td:nth-child(5) {
+  width: 145.38px;
+  white-space: nowrap;
+  text-align: center;
+}
+
+th:nth-child(3) a, th:nth-child(4) a, th:nth-child(5) a,
+td:nth-child(3) a, td:nth-child(4) a, td:nth-child(5) a {
+color: black;
+}
+
+@media screen and (max-width: 768px) {
+  table {
+    width: 100% !important;
+    table-layout: fixed;
+  }
+
+  th:nth-child(1), td:nth-child(1) {
+    width: 18%;
+    word-wrap: break-word;
+    white-space: normal;
+  }
+  th:nth-child(2), td:nth-child(2) {
+    width: 45%;
+    word-wrap: break-word;
+    white-space: normal;
+  }
+
+  th:nth-child(3), th:nth-child(4), th:nth-child(5),
+  td:nth-child(3), td:nth-child(4), td:nth-child(5) {
+    width: 100px;
+    white-space: nowrap;
+    text-align: center;
+  }
+}
+
+.index-create-header {
+  font-size: 18px;
+  font-weight: 700;
+  margin-top: 16.185px;
+  margin-bottom: 16.185px;
+}
+
+.index-new-box {
+  margin: 33px;
+}
+
+.new-book-title-box {
+  margin-bottom: 10px;
+}
+
+.new-book-title {
+  font-size: 13px;
+  font-weight: 100;
+  height: 18px;
+}
+
+.new-book-body-box {
+  margin-top: 0px;
+  margin-bottom: 10px;
+}
+
+.new-book-body {
+  font-size: 13px;
+  font-weight: 100;
+}
+
+.new-book-submit {
+  line-height: 18px;
+  margin-bottom: 10px;
+}
+
+.show-box {
+  margin: 33px;
+  font-family: Arial, sans-serif;
+}
+
+.show-box .show-item {
+  margin-left: 33px;
+  margin-bottom: 20px;
+  font-size: 14px;
+}
+
+.show-box .show-item span {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.show-box .show-actions a {
+  font-size: 13px;
+  color: black;
+}
+
+.edit-box {
+  margin: 33px;
+}
+
+.edit-header {
+  font-size: 18px;
+}
+
+.edit-title-box {
+  margin-bottom: 10px;
+}
+
+.edit-title {
+  font-size: 13px;
+}
+
+.edit-body-box {
+  margin-bottom: 10px;
+}
+
+.edit-body {
+  font-size: 13px;
+  font-weight: 100;
+}
+
+.edit-submit {
+  margin-bottom: 10px;
+}
+
+.edit-actions {
+  font-size: 13px;
+  color: black;
+}
+
+.edit-actions a {
+  color: black;
+}
+
+.error-box {
+  background-color: rgb(240, 240, 240);
+  width: 450px;
+  font-size: 13px;
+  border-color: red;
+  border-style: solid;
+  border-width: 2px;
+  margin-bottom: 20px;
+  padding-top: 7px;
+  padding-left: 7px;
+  padding-right: 7px;
+}
+
+.error-header {
+  background-color: rgb(204, 0, 0);
+  color: white;
+  font-size: 13px;
+  padding-left: 15px;
+  padding-bottom: 5px;
+  padding-top: 5px;
+  padding-right: 5px;
+  margin-top: -7px;
+  margin-left: -7px;
+  margin-right: -7px;
+}
+
+.error-box-body {
+  padding-left: 40px;
+  margin: 33px;
+}
+
+.error-messages {
+  color: black;
+}
+
+.error-title {
+  background-color: red;
+  display: inline;
+  padding: 2px;
+  height: 22px;
+  width: auto;
+}
+
+.error-title-box {
+  border-color: red;
+  border-style: solid;
+  border-width: 2px;
+}
+
+.error-body {
+  background-color: red;
+  display: inline;
+  padding: 2px;
+}
+
+.error-body-box {
+  border-color: red;
+  border-style: solid;
+  border-width: 2px;
+}
+
+.flash {
+  margin: 33px;
+  font-size: 13px;
+  color: rgb(0, 128, 0);
+}

@@ -1,0 +1,35 @@
+<div class="edit-box">
+
+  <div class="flash">
+    <%= flash[:update] %>
+  </div>
+
+  <div class="edit-header">
+    <h1>Editing Book</h1>
+  </div>
+
+  <%= form_with model: @book do |f| %>
+    <div class="edit-title-box">
+      <div class="edit-title">
+        <p>title</p>
+      </div>
+    <%= f.text_field :title %>
+    </div>
+
+    <div class="edit-body-box">
+      <div class="edit-body">
+        <p>body</p>
+      </div>
+      <%= f.text_area :body %>
+    </div>
+
+    <div class="edit-submit">
+      <%= f.submit 'Update Book' %>
+    </div>
+    <div class="edit-actions">
+      <%= link_to "Show", book_path(@book.id) %>
+       |
+      <%= link_to "Back", "/books" %>
+    </div>
+  <% end %>
+</div>

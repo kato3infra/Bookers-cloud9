@@ -1,0 +1,22 @@
+<div class="show-box">
+
+  <div class="flash">
+    <%= flash[:create] %>
+  </div>
+
+  <div class="flash">
+    <%= flash[:update] %>
+  </div>
+
+  <div class="show-item">
+    <span>Title: </span><%= @book.title %>
+  </div>
+  <div class="show-item">
+    <span>Body: </span><%= @book.body %>
+  </div>
+  <div class="show-actions">
+    <%= link_to "Edit", edit_book_path(@book.id) %>
+    |
+    <%= link_to "Back", "/books" %>
+  </div>
+</div>
